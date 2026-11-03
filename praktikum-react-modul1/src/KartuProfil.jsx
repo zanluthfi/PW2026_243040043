@@ -1,7 +1,6 @@
 // src/KartuProfil.jsx
 import React from "react";
 
-// Komponen Functional menerima properti (props) melalui parameter fungsi
 function KartuProfil({ nama, npm, kelas, status, fotoUrl }) {
   return (
     <div
@@ -12,12 +11,13 @@ function KartuProfil({ nama, npm, kelas, status, fotoUrl }) {
         backgroundColor: "#FFFFFF",
         boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
         maxWidth: "450px",
-        marginBottom: "20px",
+        // marginBottom: "20px",
+        margin: "0 auto 20px",
       }}
     >
       <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
         <img
-          src={fotoUrl || "https://via.placeholder.com/80"}
+          src={fotoUrl || "favicon.svg"}
           alt={`Foto ${nama}`}
           style={{
             width: "80px",
